@@ -19,7 +19,7 @@ jobs:
       - name: Run pre-commit
         uses: batinicaz/gha/.github/actions/pre-commit@f95e2fd11d902f8e6b6eac6ff85ced89eb6d6fc2 # ratchet:batinicaz/gha/.github/actions/pre-commit@latest
 
-  terraform:
+  plan:
     runs-on: ubuntu-latest
     permissions:
       contents: read
