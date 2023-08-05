@@ -10,5 +10,5 @@ Once a new repo is created from this template, you should:
    1. APP_ID
    2. APP_INSTALL_ID
    3. APP_PRIVATE_KEY
-2. Add the `TERRAFORM_CLOUD_TOKEN` secret
+2. Generate [API key for Terraform Cloud](https://app.terraform.io/app/settings/tokens) and store it as the `TERRAFORM_CLOUD_TOKEN` secret.
 3. Update this README and start developing
