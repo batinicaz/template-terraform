@@ -14,11 +14,9 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # ratchet:actions/checkout@v3
-
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # ratchet:actions/checkout@v4
       - name: Run pre-commit
-        uses: batinicaz/gha/.github/actions/pre-commit@f95e2fd11d902f8e6b6eac6ff85ced89eb6d6fc2 # ratchet:batinicaz/gha/.github/actions/pre-commit@latest
-
+        uses: batinicaz/gha/.github/actions/pre-commit@4426e541888dfe9926d86e7d9954edac36dba55b # ratchet:batinicaz/gha/.github/actions/pre-commit@latest
   plan:
     runs-on: ubuntu-latest
     permissions:
@@ -29,8 +27,7 @@ jobs:
       TF_CLOUD_ORGANIZATION: "${{ github.repository_owner }}"
       TF_WORKSPACE: ${{ github.event.repository.name }}
     steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # ratchet:actions/checkout@v3
-
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # ratchet:actions/checkout@v4
       - name: Upload Configuration
         uses: hashicorp/tfc-workflows-github/actions/upload-configuration@02ae73d5f2ff0b7eaec858cd12c41b3d914e8d2c # ratchet:hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.2
         id: plan-upload
