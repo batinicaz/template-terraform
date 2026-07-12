@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
       - name: Run pre-commit
-        uses: batinicaz/gha/.github/actions/pre-commit@v1
+        uses: batinicaz/gha/.github/actions/pre-commit@ed9c463aed4eb9640fb5a404e7b8d418a28f4e07 # v1
   terraform:
-    uses: batinicaz/gha/.github/workflows/terraform-plan.yml@v1
+    uses: batinicaz/gha/.github/workflows/terraform-plan.yml@ed9c463aed4eb9640fb5a404e7b8d418a28f4e07 # v1
     permissions:
       contents: read
       id-token: write

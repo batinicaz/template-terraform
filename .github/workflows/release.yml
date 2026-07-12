@@ -8,7 +8,7 @@ permissions:
   contents: read
 jobs:
   deploy:
-    uses: batinicaz/gha/.github/workflows/terraform-apply.yml@v1
+    uses: batinicaz/gha/.github/workflows/terraform-apply.yml@ed9c463aed4eb9640fb5a404e7b8d418a28f4e07 # v1
     permissions:
       contents: read
       id-token: write
